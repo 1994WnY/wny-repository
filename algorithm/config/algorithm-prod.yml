@@ -31,14 +31,7 @@ spring:
   cloud:
     inetutils:
       default-ip-address: 192.168.8.151
-eureka:
-  instance:
-    instance-id: ${spring.application.name}(${spring.cloud.client.ip-address}:${server.port})
-    prefer-ip-address: true
-  client:
-    serviceUrl:
-      defaultZone: http://admin:Botech2019@172.16.1.161:9000/eureka/
-
+      
 botech:
   swagger:
     contextPath: ${server.servlet.context-path:}
